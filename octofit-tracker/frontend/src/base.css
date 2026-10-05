@@ -1,0 +1,55 @@
+:root {
+  font-family: 'Avenir Next', 'Trebuchet MS', sans-serif;
+  color: #1c2e28;
+  background: #f3f5ef;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --ink: #1c2e28;
+  --muted: #69766e;
+  --surface: #fff;
+  --line: #dce4dc;
+  --leaf: #c4d957;
+  --leaf-dark: #859b3b;
+  --coral: #d97861;
+  --display-font: 'Avenir Next', 'Trebuchet MS', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 320px;
+  min-height: 100%;
+  background: #f3f5ef;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  background:
+    radial-gradient(ellipse at 88% 4%, rgb(207 223 161 / 18%), transparent 32rem),
+    #f3f5ef;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid #bf6c55;
+  outline-offset: 3px;
+}
+
+::selection {
+  color: #1c2e28;
+  background: #dce8a4;
+}
