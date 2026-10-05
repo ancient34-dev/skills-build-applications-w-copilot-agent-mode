@@ -1,4 +1,4 @@
-import { Schema, model, models } from 'mongoose';
+import mongoose, { Schema } from 'mongoose';
 
 const leaderboardSchema = new Schema(
   {
@@ -13,6 +13,6 @@ const leaderboardSchema = new Schema(
   { timestamps: true },
 );
 
-const Leaderboard = models.Leaderboard || model('Leaderboard', leaderboardSchema);
+const Leaderboard = mongoose.models.Leaderboard || mongoose.model('Leaderboard', leaderboardSchema);
 
 export default Leaderboard;
